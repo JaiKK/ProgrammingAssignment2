@@ -2,6 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
+## makeCacheMatrix function will create a list object which will hold inverse matrix of supplied matrix.
+## Cache of the matrix will be calculated by subsequent cacheSolve function defined in this R code file.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -20,6 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## cachaSolve function will calculate and cache inverse of matrix, which comes from makeCacheMatrix.
+## It takes first parameter as object of makeCacheMatrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
